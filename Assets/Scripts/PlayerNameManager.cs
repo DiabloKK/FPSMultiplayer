@@ -1,4 +1,4 @@
-using Photon.Pun;
+﻿using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -10,6 +10,7 @@ public class PlayerNameManager : MonoBehaviour
 
     private void Start()
     {
+        // PlayerPrefs là một cơ chế lưu trữ đơn giản trong Unity Engine
         if (PlayerPrefs.HasKey("username"))
         {
             usernameInput.text = PlayerPrefs.GetString("username");

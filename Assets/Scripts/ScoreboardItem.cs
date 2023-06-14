@@ -34,6 +34,7 @@ public class ScoreboardItem : MonoBehaviourPunCallbacks
         }
     }
 
+    // OnPlayerPropertiesUpdate line 182 PlayerController
     public override void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)
     {
         if(targetPlayer == player)
